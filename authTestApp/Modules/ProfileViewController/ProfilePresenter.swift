@@ -28,9 +28,13 @@ class ProfilePresenter {
             case .failure(let fail):
                 switch fail {
                 case .httpError:
-                    AlertService.noConnectionAlert()
+                    DispatchQueue.main.async {
+                        AlertService.noConnectionAlert()
+                    }
                 case .serviceError(let err):
-                    AlertService.showAlert(style: .alert, title: err.resultMessage, message: nil)
+                    DispatchQueue.main.async {
+                        AlertService.showAlert(style: .alert, title: err.resultMessage, message: nil)
+                    }
                 }
             }
         }

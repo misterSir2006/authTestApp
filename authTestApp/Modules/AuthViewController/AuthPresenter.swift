@@ -51,7 +51,9 @@ final class AuthPresenter {
             case .failure(let fail):
                 switch fail {
                 case .httpError:
-                    break
+                    DispatchQueue.main.async {
+                        AlertService.noConnectionAlert()
+                    }
                 case .serviceError(let error):
                     print(error)
                 }
