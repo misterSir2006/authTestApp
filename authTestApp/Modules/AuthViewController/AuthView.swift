@@ -44,7 +44,8 @@ class AuthView: UIView {
 
     lazy var loginForm: FormField = {
         let form = FormField()
-        form.placeholder = "Логин"
+        form.attributedPlaceholder = NSAttributedString(string: "Логин",
+                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
         form.autocorrectionType = .no
         form.autocapitalizationType = .none
         form.delegate = self
@@ -54,7 +55,8 @@ class AuthView: UIView {
 
     lazy var passwordForm: FormField = {
         let form = FormField()
-        form.placeholder = "Пароль"
+        form.attributedPlaceholder = NSAttributedString(string: "Пароль",
+                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
         form.isSecureTextEntry = true
         form.delegate = self
 
@@ -63,9 +65,10 @@ class AuthView: UIView {
 
     lazy var captchaForm: FormField = {
         let form = FormField()
-        form.placeholder = "Captcha"
         form.autocorrectionType = .no
         form.autocapitalizationType = .none
+        form.attributedPlaceholder = NSAttributedString(string: "Captcha",
+                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
         form.delegate = self
 
         return form

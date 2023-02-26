@@ -28,16 +28,4 @@ struct Constants {
         case auth = "/auth"
     }
 
-    struct LocStrings {
-
-    }
-
-    // MARK: - Design
-    struct Colors {
-
-    }
-
-    struct Images {
-
-    }
 }

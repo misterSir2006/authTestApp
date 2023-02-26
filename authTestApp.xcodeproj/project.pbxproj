@@ -498,6 +498,7 @@
 				DEVELOPMENT_TEAM = T8C5478722;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = authTestApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Auth Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -532,6 +533,7 @@
 				DEVELOPMENT_TEAM = T8C5478722;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = authTestApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Auth Test";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
