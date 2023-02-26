@@ -44,7 +44,7 @@ class AuthView: UIView {
 
     lazy var loginForm: FormField = {
         let form = FormField()
-        form.placeholder = "Login"
+        form.placeholder = "Логин"
         form.autocorrectionType = .no
         form.autocapitalizationType = .none
         form.delegate = self
@@ -54,7 +54,7 @@ class AuthView: UIView {
 
     lazy var passwordForm: FormField = {
         let form = FormField()
-        form.placeholder = "Password"
+        form.placeholder = "Пароль"
         form.isSecureTextEntry = true
         form.delegate = self
 
@@ -83,7 +83,7 @@ class AuthView: UIView {
 
     lazy var authButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Sign in", for: .normal)
+        button.setTitle("Войти", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 10
